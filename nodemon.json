@@ -1,0 +1,25 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node"
+  },
+  "events": {
+    "restart": "date"
+  },
+  "watch": [
+    "server.js",
+    "conf.js",
+    "model/",
+    "lib/",
+    "route/"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json"
+}
